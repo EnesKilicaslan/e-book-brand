@@ -98,6 +98,83 @@
       <h2>100% width until lg screens, then container </h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident quaerat in voluptate placeat? Id obcaecati beatae, soluta praesentium incidunt molestiae odit itaque, quae a dolore voluptates dicta adipisci labore recusandae totam porro dolorum!</p>
     </div>
+    
+    <hr/>
+
+    <h2>Grid Systems</h2>
+
+    <div>
+      <h3>Basic Grid</h3>
+      When we write col, it will take equal number of columns
+      <div class="row">
+        <div class="col">
+          <div class="p-3 bg-primary text-light">Col 1</div>
+        
+        </div>
+        <div class="col">
+          <div class="p-3 bg-primary text-light">Col 2</div>
+        
+        </div>
+        <div class="col">
+          <div class="p-3 bg-primary text-light">Col 3</div>
+        </div>
+        </div>
+    </div>
+    <div>
+      <h3>Columns Width</h3>
+      we can specify width, if we just write col for the other columns, they will take half of left space
+      <div class="row">
+        <div class="col-6">
+          <div class="p-3 bg-primary text-light">Col 1</div>
+        
+        </div>
+        <div class="col-2">
+          <div class="p-3 bg-primary text-light">Col 2</div>
+        
+        </div>
+        <div class="col-4">
+          <div class="p-3 bg-primary text-light">Col 3</div>
+        </div>
+        </div>
+    </div>
+    <div>
+      <h3>Responsive Colums Width</h3>
+      If we don't specify anything related with the column width, then it will take %100 space
+      If we specify a width to a specific size, then it will be applied to it together with the bigger sizes
+      
+      <div class="row">
+        <div class="col-sm-6 col-md-8">
+          <div class="p-3 bg-primary text-light">Col 1</div>
+        
+        </div>
+        <div class="col-sm-4 col-md-2">
+          <div class="p-3 bg-primary text-light">Col 2</div>
+        
+        </div>
+        <div class="col-sm-2 col-md-2">
+          <div class="p-3 bg-primary text-light">Col 3</div>
+        </div>
+        </div>
+    </div>
+    div>
+      <h3>Justify content</h3>
+
+      we can specify in the row, how to organize the contents
+      
+      <div class="row Justify-content-evenly">
+        <div class="col-md-3">
+          <div class="p-3 bg-primary text-light">Col 1</div>
+        
+        </div>
+        <div class="col-md-3">
+          <div class="p-3 bg-primary text-light">Col 2</div>
+        
+        </div>
+        <div class="col-md-3">
+          <div class="p-3 bg-primary text-light">Col 3</div>
+        </div>
+        </div>
+    </div>
 
 
     <script
