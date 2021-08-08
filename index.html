@@ -442,9 +442,19 @@
                 <input
                   type="email"
                   id="email"
-                  class="form-control"
+                  class="form-control border-end-0"
                   placeholder="e.g example@mailaddress.com"
                 />
+
+                <span class="input-group-text bg-transparent">
+                  <div
+                    class="e-tooltip"
+                    data-bs-placement="right"
+                    title="This is tooltip"
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </div>
+                </span>
               </div>
 
               <label for="name" class="form-label mt-3">Name</label>
@@ -455,9 +465,18 @@
                 ></span>
                 <input
                   type="text"
-                  class="form-control"
+                  class="form-control border-end-0"
                   placeholder="e.g Jhon"
                 />
+                <span class="input-group-text bg-transparent">
+                  <div
+                    class="e-tooltip"
+                    data-bs-placement="right"
+                    title="Your name that your mom/dad gave you on birth"
+                  >
+                    <i class="bi bi-question-circle text-muted"></i>
+                  </div>
+                </span>
               </div>
 
               <label for="subject" class="form-label mt-3">
@@ -496,5 +515,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var exampleEl = document.getElementById("e-tooltip");
+      var tooltip = new bootstrap.Tooltip(exampleEl, {
+        boundary: document.body, // or document.querySelector('#boundary')
+      });
+    </script>
   </body>
 </html>
