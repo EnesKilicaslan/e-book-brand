@@ -27,13 +27,12 @@
     <!-- Navbar  -->
     <div class="container-lg">
       <nav
-        class="navbar fixed-top navbar-expand-md navbar-light ps-4"
-        style="background: rgba(135, 168, 164, 0.4)"
+        class="navbar fixed-top navbar-expand-md navbar-dark ps-4 text-white"
+        style="background: rgba(135, 168, 164, 0.95)"
       >
-        <i class="bi bi-book"></i>
-
-        <a href="#intro" class="navbar-brand ms-1">
-          <span class="fw-bold text-secondary"> Net ninja Pro - Book </span>
+        <a href="#intro" class="navbar-brand ms-1 text-white">
+          <i class="bi bi-book"></i>
+          <span class="fw-bold"> Net ninja Pro - Book </span>
         </a>
 
         <button
@@ -59,9 +58,9 @@
           id="navbarNavAltMarkup"
         >
           <div class="navbar-nav">
-            <a class="nav-link active" href="#">Home</a>
-            <a class="nav-link" href="#topics">About the book</a>
-            <a class="nav-link">Get in touch</a>
+            <a class="nav-link active fw-bold" href="#">Home</a>
+            <a class="nav-link text-white" href="#topics">About the book</a>
+            <a class="nav-link text-white" href="#contact">Get in touch</a>
 
             <a class="d-md-none nav-link" href="#pricing">Pricing</a>
 
@@ -415,6 +414,78 @@
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact form -->
+    <section id="contact">
+      <div class="container-lg">
+        <div class="text-center">
+          <h2>Get in touch</h2>
+          <p class="lead text-muted">
+            have questions? fill the form to directly contact me
+          </p>
+        </div>
+
+        <div class="row justify-content-center my-5">
+          <div class="col-lg-6">
+            <form>
+              <label for="email" class="form-label">Email</label>
+
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="bi bi-envelope-fill"></i
+                ></span>
+
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="e.g example@mailaddress.com"
+                />
+              </div>
+
+              <label for="name" class="form-label mt-3">Name</label>
+
+              <div class="input-group">
+                <span class="input-group-text">
+                  <i class="bi bi-person-fill"></i
+                ></span>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="e.g Jhon"
+                />
+              </div>
+
+              <label for="subject" class="form-label mt-3">
+                What is your question about?</label
+              >
+              <select name="subject" id="subject" class="form-select">
+                <option value="pricing" selected>Pricing</option>
+                <option value="content" selected>Content</option>
+                <option value="other" selected>Other</option>
+              </select>
+
+              <div class="form-floating mt-3">
+                <input
+                  type="textarea"
+                  class="form-control"
+                  style="height: 140px"
+                />
+                <label for="content">Your query....</label>
+              </div>
+
+              <div class="row justify-content-end">
+                <div class="col-sm-2" style="margin-right: 6px">
+                  <div class="mb-4 mt-3 text-center">
+                    <button class="btn btn-md btn-secondary">Send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
