@@ -1,0 +1,24 @@
+{
+  "name": "e-book-brand",
+  "version": "1.0.0",
+  "description": "## This project is made as a side project to introduce a Book to the customers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass -w sass -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EnesKilicaslan/e-book-brand.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EnesKilicaslan/e-book-brand/issues"
+  },
+  "homepage": "https://github.com/EnesKilicaslan/e-book-brand#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "node-sass": "^6.0.1"
+  }
+}
